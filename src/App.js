@@ -5,12 +5,12 @@ import Circles from './components/Circles/Circles';
 
 class App extends Component {
   state = {
-    choices: ['1', '2', '3', '4'],
-    activeNum: '1',
+    choices: ['b1', 'b2', 'b3', 'b4'],
+    activeNum: 'b1',
   };
-  changeChoice(choice) {
-    this.setState({ activeNum: choice });
-  }
+  changeChoice = (btn) => {
+    this.setState({ activeNum: btn });
+  };
   render() {
     return (
       <div className="App">
